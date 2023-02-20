@@ -1,4 +1,4 @@
-const Btn = ({text, cssBtn}) => {
+const Btn = ({ text, cssBtn }) => {
     return (
         <div className={cssBtn}>
             <button type="button">{text}</button>

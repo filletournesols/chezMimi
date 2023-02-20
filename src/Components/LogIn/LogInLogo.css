@@ -1,17 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.logo {
+.log_in_logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 13rem;
 }
 
-.logo img {
+.log_in_logo img {
     width: 30rem;
     height: 20rem;
 }

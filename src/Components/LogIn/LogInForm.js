@@ -1,13 +1,17 @@
-import Input from './Input';
+import Input from '../ReusableComponents/Input';
+import WrongAlert from '../ReusableComponents/WrongAlert';
 
 const LogInForm = () => {
     const logInBtnEmail = 'log_in_form_input_email'
     const logInBtnPsw = 'log_in_form_input_psw'
+    const wrongAlert = 'log_in_wrong_alert'
     return (
         <div className="log_in">
             <form className='log_in_form'>
                 <Input cssInput={logInBtnEmail} text={'Correo'}></Input>
+                <WrongAlert cssWrongAlert={wrongAlert} text={'correo incorrecto'}></WrongAlert>
                 <Input cssInput={logInBtnPsw} text={'Contraseña'}></Input>
+                <WrongAlert cssWrongAlert={wrongAlert} text={'contraseña incorrecta'}></WrongAlert>
             </form>
         </div>
     );
