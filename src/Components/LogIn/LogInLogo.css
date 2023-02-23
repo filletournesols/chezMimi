@@ -1,0 +1,11 @@
+.log_in_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+}
+
+.log_in_logo img {
+    width: 30rem;
+    height: 20rem;
+}
