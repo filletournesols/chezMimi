@@ -1,0 +1,22 @@
+.error_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 25rem;
+}
+
+.oops {
+    font-size: 5rem;
+}
+
+.error_message {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.error {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #C23B22;
+}

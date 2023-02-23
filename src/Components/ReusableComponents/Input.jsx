@@ -1,7 +1,7 @@
-const Input = ({ text, cssInput, inputType }) => {
+const Input = ({ text, cssInput, inputType, onChange, value }) => {
     return (
         <div>
-                <input type={inputType} className={cssInput} placeholder={text} required></input>
+                <input type={inputType} className={cssInput} placeholder={text} onChange={onChange} value={value} required></input>
         </div>
     );
 }
