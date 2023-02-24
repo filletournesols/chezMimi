@@ -9,7 +9,7 @@ const LogIn = () => {
     const logo = 'log_in_logo'
 
     return (
-        <div className="App">
+        <div>
             <Logo cssLogo={logo}></Logo>
             <LogInForm></LogInForm>
         </div>

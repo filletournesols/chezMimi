@@ -1,22 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import ErrorPage from './ErrorPage.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
+
+import { checkAuthLoader } from './util/auth'
+
+import LogIn from './Components/LogIn'
+import ErrorPage from './ErrorPage.jsx'
+import Home from './Components/home';
 import TakeOrders from './Components/TakeOrders/TakeOrders.jsx'
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Home />,
         errorElement: <ErrorPage />
     },
     {
-        path: "takeorders",
+        path: "/login",
+        element: <LogIn />,
+    },
+    {
+        path: "/takeorders",
         element: <TakeOrders />,
+        loader: checkAuthLoader,
     },
 ]);
 

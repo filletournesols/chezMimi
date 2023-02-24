@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
-// <Link to="/takeorders" style={{ textDecoration: 'none' }}>                </Link>
+import { useNavigate } from 'react-router-dom'
 
 import axios from "axios"
 
@@ -16,6 +15,8 @@ const LogInForm = () => {
     const pswInputType = 'password'
     const btn = 'log_in_btn'
     const btnType = 'submit'
+
+    const navigate = useNavigate();
 
     const [enteredUserName, setEnteredUserName] = useState('')
     const [enteredPsw, setEnteredPsw] = useState('')
@@ -37,7 +38,11 @@ const LogInForm = () => {
         axios.post("https://leburgerqueenrestaurant.onrender.com/auth", userData)
         .then((response) => {
             console.log(response.status, response.data);
+            localStorage.setItem('token', response.data)
             // guardar en cookie response.data
+            if (response.data) {
+                return navigate("/takeorders")
+            }
         })
         // two-way biding
         setEnteredUserName('')
@@ -58,6 +63,3 @@ const LogInForm = () => {
 }
 
 export default LogInForm;
-
-/* <input className="log_in_form_input_email" placeholder="Correo" required></input>
-<input className="log_in_form_input_psw" placeholder="Contraseña" required></input> */
