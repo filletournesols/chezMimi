@@ -18,3 +18,9 @@ export const checkAuthLoader = () => {
 
     return null;
 }
+
+export const logout = () => {
+    localStorage.removeItem('token')
+    console.log('logouuut')
+    return redirect('/')
+}

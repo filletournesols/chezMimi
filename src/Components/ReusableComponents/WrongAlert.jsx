@@ -1,7 +1,7 @@
-const WrongAlert = ({text, cssWrongAlert}) => {
+const WrongAlert = ({text, cssWrongAlert, onChange}) => {
     return (
         <div>
-                <p className={cssWrongAlert}>{text}</p>
+                <p className={cssWrongAlert} onChange={onChange}>{text}</p>
         </div>
     );
 }

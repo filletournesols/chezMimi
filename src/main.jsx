@@ -12,6 +12,7 @@ import LogIn from './Components/LogIn'
 import ErrorPage from './ErrorPage.jsx'
 import Home from './Components/home';
 import TakeOrders from './Components/TakeOrders/TakeOrders.jsx'
+import { logout } from './util/auth'
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         element: <TakeOrders />,
         loader: checkAuthLoader,
     },
+    {
+        path: '/logout',
+        action: logout,
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
