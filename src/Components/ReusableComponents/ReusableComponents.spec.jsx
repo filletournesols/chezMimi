@@ -9,19 +9,19 @@ import WrongAlert from "./WrongAlert"
 import Logo from "./Logo"
 
 describe('Reusable components', () => {
-    test('render Btn', () => {
+    it('render Btn', () => {
         render(<Btn />)
     })
     // validar que se llama la función que se pasa
-    test('render Input', () => {
+    it('render Input', () => {
         render(<Input />)
     })
     // validar si lee el prop de texto 
     // snapshop para ver si se ve igual que como se hace
-    test('render Logo', () => {
+    it('render Logo', () => {
         render(<Logo />)
     })
-    test('render WrongAlert', () => {
+    it('render WrongAlert', () => {
         render(<WrongAlert />)
     })
 })
