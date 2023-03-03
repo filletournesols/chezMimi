@@ -1,8 +1,7 @@
 import React from "react";
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import * as router from 'react-router'
 
-import Btn from '../ReusableComponents/Btn'
 import LandingPage from './LandingPage'
 
 describe('LandingPage Btn', () => {
@@ -12,27 +11,10 @@ describe('LandingPage Btn', () => {
     vi.spyOn(router, 'useNavigate').mockImplementation(() => navigate)
     })
 
-    const clickHandler = vi.fn(navigate("/login"));
-
-    const button = screen.getByRole('button')
-    fireEvent.click(button)
-
-    // const setState = vi.mock();
-    // const useStateSpy = vi.spyOn(React, "useState");
-    // useStateSpy.mockImplementation((initialState) => [initialState, setState]);
-    // const wrapper = render(<App />);
-
-    it('render Landing Page', () => {
+    it('render Landing Page and change to /login', () => {
         render(<LandingPage />)
-    })
-    it('render Btn and its text', () => {
-        render(<Btn text={'Button Test'} onClick={clickHandler}/>)
-        const element = screen.getByText('Button Test')
-        expect(element).toBeInTheDocument()
-    })
-    it('should change page', () => {
-        render(<Btn text={'Button Test'} onClick={clickHandler}/>)
+        const button = screen.getByText('INGRESAR')
+        fireEvent.click(button)
         expect(navigate).toHaveBeenCalledWith('/login')
     })
-    // validar que se llama la función que se pasa
 })
