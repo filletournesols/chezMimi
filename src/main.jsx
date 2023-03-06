@@ -8,16 +8,16 @@ import {
 
 import { checkAuthLoader } from './util/auth'
 
-import LogIn from './Components/LogIn'
-import ErrorPage from './ErrorPage.jsx'
-import Home from './Components/home';
+import LogIn from './Components/LogIn/LogIn'
+import ErrorPage from './Components/ErrorPage/ErrorPage'
+import LandingPage from './Components/LandingPage/LandingPage'
 import TakeOrders from './Components/TakeOrders/TakeOrders.jsx'
 import { logout } from './util/auth'
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />,
+        element: <LandingPage />,
         errorElement: <ErrorPage />
     },
     {

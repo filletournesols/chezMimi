@@ -1,12 +1,12 @@
 import './App.css'
 
-import Home from './Components/home';
-import LogIn from './Components/LogIn.jsx';
+import LandingPage from './Components/LandingPage/LandingPage';
+import LogIn from './Components/LogIn/LogIn';
 
 const App = () => {
   return (
     <div className="App">
-      <Home></Home>
+      <LandingPage></LandingPage>
       <LogIn></LogIn>
     </div>
   );

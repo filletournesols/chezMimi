@@ -1,9 +1,9 @@
-import Logo from './ReusableComponents/Logo.jsx';
-import LogInForm from './LogIn/LogInForm.jsx';
+import Logo from '../ReusableComponents/Logo.jsx';
+import LogInForm from './LogInForm.jsx';
 
-import './LogIn/LogInLogo.css'
-import './LogIn/LogInForm.css';
-import './LogIn/LogInBtn.css';
+import './LogInLogo.css'
+import './LogInForm.css';
+import './LogInBtn.css';
 
 const LogIn = () => {
     const logo = 'log_in_logo'

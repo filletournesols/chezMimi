@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 
-import Logo from './ReusableComponents/Logo.jsx';
-import Btn from './ReusableComponents/Btn.jsx';
-import './LogIn/LogInLogo.css'
-import './Home.css'
+import Logo from '../ReusableComponents/Logo.jsx';
+import Btn from '../ReusableComponents/Btn.jsx';
+import '../LogIn/LogInLogo.css'
+import './LandingPage.css'
 
-const Home = () => {
+const LandingPage = () => {
     const logo = 'log_in_logo'
     const btn = 'home_btn'
     const btnType = 'button'
@@ -25,4 +25,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default LandingPage;
