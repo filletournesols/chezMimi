@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 13rem;
 }
 
 ::placeholder{
@@ -14,19 +13,104 @@
     outline: none;
     background: none;
     border: none;
-    border-bottom: 2px solid #867771;
-    text-indent: 1rem;
-    width: 46rem;
-    font-size: 2.5rem;
-}
-
-.log_in_form_input_psw {
-    margin-top: 5rem;
 }
 
 .log_in_wrong_alert{
     font-family: 'Merriweather', sans-serif;
     color: #C23B22;
-    font-size: 1.8rem;
-    margin-top: 1.4rem;
+}
+
+@media screen and (min-width: 200px){
+    .log_in_form {
+        margin-top: 5rem;
+    }
+    .log_in_form input {
+        border-bottom: 1.5px solid #867771;
+        text-indent: 0.5rem;
+        width: 15rem;
+        font-size: 1.5rem;
+    }
+    .log_in_form_input_psw {
+        margin-top: 3rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+
+/* galaxy fold */
+@media screen and (min-width: 280px){
+    .log_in_form {
+        margin-top: 7rem;
+    }
+    .log_in_form input {
+        width: 23rem;
+    }
+    .log_in_form_input_psw {
+        margin-top: 4rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 1rem;
+    }
+}
+
+/* iphone SE */
+@media screen and (min-width: 375px){
+    .log_in_form input {
+        width: 30rem;
+        font-size: 1.8rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 556px){
+    .log_in_form input {
+        border-bottom: 1.7px solid #867771;
+        text-indent: 1rem;
+        width: 40rem;
+        font-size: 2rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 1.5rem;
+    }
+}
+
+/* ipad mini */
+@media screen and (min-width: 768px){
+    .log_in_form input {
+        border-bottom: 2px solid #867771;
+        text-indent: 1rem;
+        width: 46rem;
+        font-size: 2.5rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 1.8rem;
+        margin-top: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .log_in_form input {
+        font-size: 2.8rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 2rem;
+        margin-top: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1392px){
+    .log_in_form {
+        margin-top: 10rem;
+    }
+    .log_in_form input {
+        width: 60rem;
+        font-size: 3rem;
+    }
+    .log_in_wrong_alert{
+        font-size: 2.4rem;
+    }
 }

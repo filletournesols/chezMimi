@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 13rem;
 }
 
 .log_in_btn button {
@@ -10,9 +9,72 @@
     color: #403E37;
     font-family: 'Merriweather', sans-serif;
     cursor: pointer;
-    font-size: 2.5rem;
-    border-radius: 2.5rem;
-    width: 23rem;
-    height: 6.6rem;
     border: none;
+}
+
+@media screen and (min-width: 200px){
+    .log_in_btn {
+        margin-top: 5rem;
+    }
+    .log_in_btn button {
+        font-size: 1.2rem;
+        width: 11rem;
+        height: 3.4rem;
+        border-radius: 1.2rem;
+    }
+}
+
+/* galaxy fold */
+@media screen and (min-width: 280px){
+    .log_in_btn {
+        margin-top: 7rem;
+    }
+    .log_in_btn button {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+}
+
+/* iphone SE */
+@media screen and (min-width: 375px){
+    .log_in_btn button {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+}
+
+/* ipad mini */
+@media screen and (min-width: 768px){
+    .log_in_btn button {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+}
+
+/* ipad air */
+@media screen and (min-width: 820px){
+    .log_in_btn button {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+}
+
+@media screen and (min-width: 1392px){
+    .log_in_btn {
+        margin-top: 10rem;
+    }
+    .log_in_btn button {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
 }
