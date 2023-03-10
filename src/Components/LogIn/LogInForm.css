@@ -17,7 +17,7 @@
 
 .log_in_wrong_alert{
     font-family: 'Merriweather', sans-serif;
-    color: #C23B22;
+    color: var(--alerts);
 }
 
 @media screen and (min-width: 200px){
@@ -25,7 +25,7 @@
         margin-top: 5rem;
     }
     .log_in_form input {
-        border-bottom: 1.5px solid #867771;
+        border-bottom: 1.5px solid var(--inputUnderline);
         text-indent: 0.5rem;
         width: 15rem;
         font-size: 1.5rem;
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 556px){
     .log_in_form input {
-        border-bottom: 1.7px solid #867771;
+        border-bottom: 1.7px solid var(--inputUnderline);
         text-indent: 1rem;
         width: 40rem;
         font-size: 2rem;
@@ -81,7 +81,7 @@
 /* ipad mini */
 @media screen and (min-width: 768px){
     .log_in_form input {
-        border-bottom: 2px solid #867771;
+        border-bottom: 2px solid var(--inputUnderline);
         text-indent: 1rem;
         width: 46rem;
         font-size: 2.5rem;

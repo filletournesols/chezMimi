@@ -1,0 +1,43 @@
+.order_options {
+    display: grid;
+    margin-top: 4rem;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.breakfast_btn button {
+    background-color: var(--mainBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}
+
+.drinks_btn button {
+    background-color: var(--mainBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}
+
+.regular_btn button {
+    background-color: var(--mainBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}

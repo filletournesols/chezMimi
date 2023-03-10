@@ -5,8 +5,8 @@
 }
 
 .home_btn button {
-    background-color: rgb(175, 150, 150, .4);
-    color: #403E37;
+    background-color: var(--mainBtns);
+    color: var(--text);
     font-family: 'Merriweather', sans-serif;
     cursor: pointer;
     border: none;

@@ -18,5 +18,5 @@
 .error {
     font-size: 2rem;
     margin-top: 2rem;
-    color: #C23B22;
+    color: var(--alerts);
 }

@@ -7,10 +7,29 @@
 }
 
 html {
-  font-family: 'Merriweather', sans-serif;
+  font-family: var(--font-family);
   font-size: 62.5%;
 }
 
 body {
-  background-color: #EAE8E0;
+  background-color: var(--background);
+}
+
+:root {
+  --background: #EAE8E0;
+  --orderBackgroun: rgb(217, 209, 201);
+  --waiter: rgb(143, 161, 159);
+  --chef: rgb(175, 150, 150);
+  --admin: rgb(181, 172, 167);
+  --mainBtns: rgb(175, 150, 150, .4);
+  --inputUnderline: rgb(134, 119, 113);
+  --text: rgb(64, 62, 55);
+  --alerts: rgb(194, 59, 34);
+  --hoverBtns: rgb(177, 193, 193);
+  --orderBtn: rgb(163, 177, 169);
+  --delivered: rgb(138, 167, 164);
+  --canceled: rgb(175, 150, 150);
+  --pending: rgb(245, 236, 219);
+  --delivering: rgb(213, 187, 166);
+  --font-family: 'Merriweather', sans-serif;
 }

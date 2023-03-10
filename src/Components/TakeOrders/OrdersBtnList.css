@@ -1,0 +1,30 @@
+.orders_btn_list {
+    position: absolute;
+    right: 6rem;
+    top: 7rem;
+}
+
+.orders_btn button {
+    background-color: var(--mainBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5rem;
+    width: 14rem;
+    height: 3.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.new_order_btn button {
+    background-color: var(--mainBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5rem;
+    width: 14rem;
+    height: 3.5rem;
+    border: none;
+}
