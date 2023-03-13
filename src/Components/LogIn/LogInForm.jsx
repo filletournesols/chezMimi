@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import jwt_decode from "jwt-decode"
 
 import axios from "axios"
 
@@ -46,18 +47,29 @@ const LogInForm = () => {
             username: enteredUserName,
             password: enteredPsw
         };
-        return axios.post("https://leburgerqueenrestaurant.onrender.com/auth", userData)
+        return axios.post("http://localhost:8080/auth", userData)
         .then((response) => {
             console.log(response)
             console.log(response.status)
             console.log(response.data)
             localStorage.setItem('token', response.data)
+            const decodedToken = jwt_decode(response.data)
+            const userName = decodedToken.username
+            localStorage.setItem('username', userName)
+            const role = decodedToken.role
+            localStorage.setItem('role', role)
             if (response.data) {
                 // two-way biding
                 setEnteredUserName('')
                 setEnteredPsw('')
                 console.log('mimi')
-                navigate("/takeorders")
+                if (role == 'waiter') {
+                    navigate("/takeorders")
+                } if (role == 'chef') {
+                    navigate("/orders")
+                } if (role == 'superadmin' || role == 'admin') {
+                    navigate("/backoffice")
+                }
             }
             return response.data
         }).catch((error) =>{
