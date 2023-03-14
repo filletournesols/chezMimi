@@ -9,7 +9,42 @@
     color: var(--text);
     align-items: center;
     padding: 4px;
+}
+
+.none {
+    border: none;
+}
+
+.waiter {
+    font-size: 2rem;
+    color: var(--text);
+    align-items: center;
+    padding: 4px;
     border: 1px solid var(--waiter);
+}
+
+.chef {
+    font-size: 2rem;
+    color: var(--text);
+    align-items: center;
+    padding: 4px;
+    border: 1px solid var(--chef);
+}
+
+.admin {
+    font-size: 2rem;
+    color: var(--text);
+    align-items: center;
+    padding: 4px;
+    border: 1px solid var(--admin);
+}
+
+.superadmin {
+    font-size: 2rem;
+    color: var(--text);
+    align-items: center;
+    padding: 4px;
+    border: 1px solid var(--admin);
 }
 
 .take_orders_btns {

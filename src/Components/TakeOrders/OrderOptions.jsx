@@ -71,14 +71,16 @@ const OrderOptions = () => {
     Debe poder ir intercambiando lo que muestra; ocultarse o mostrar la información 
     onClick={}*/
     return (
-        <div className='order_options'>
-            <Btn btnType={btnType} cssBtn={drinksBtn} text={'Bebestibles'} onClick={drinksBtnHandler}></Btn>
-            <Btn btnType={btnType} cssBtn={breakfastBtn} text={'Desayuno'} onClick={breakfastBtnHandler}></Btn>
-            <Btn btnType={btnType} cssBtn={regularBtn} text={'Regular'} onClick={regularBtnHandler}></Btn>
+        <div>
+            <div className='order_options'>
+                <Btn btnType={btnType} cssBtn={drinksBtn} text={'Bebestibles'} onClick={drinksBtnHandler}></Btn>
+                <Btn btnType={btnType} cssBtn={breakfastBtn} text={'Desayuno'} onClick={breakfastBtnHandler}></Btn>
+                <Btn btnType={btnType} cssBtn={regularBtn} text={'Regular'} onClick={regularBtnHandler}></Btn>    
+            </div>
             <div className='productGrid'>
-                {showBreakfast == true && breakfast.map((el) => <p key={el.product_id}>{el.name}</p>)}
-                {showDrinks == true && drinks.map((el) => <p key={el.product_id}>{el.name}</p>)}
-                {showRegular == true && regular.map((el) => <p key={el.product_id}>{el.name}</p>)}
+                {showBreakfast == true && breakfast.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showDrinks == true && drinks.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showRegular == true && regular.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
             </div>
         </div>
     );

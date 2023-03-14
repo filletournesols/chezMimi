@@ -6,7 +6,7 @@
     justify-items: center;
 }
 
-.breakfast_btn button {
+.order_options button {
     background-color: var(--mainBtns);
     color: var(--text);
     font-family: 'Merriweather', sans-serif;
@@ -18,26 +18,22 @@
     border: none;
 }
 
-.drinks_btn button {
-    background-color: var(--mainBtns);
+.productGrid {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    justify-items: center;
     color: var(--text);
     font-family: 'Merriweather', sans-serif;
-    cursor: pointer;
-    font-size: 2.5rem;
-    border-radius: 2.5rem;
-    width: 23rem;
-    height: 6.6rem;
-    border: none;
 }
 
-.regular_btn button {
-    background-color: var(--mainBtns);
-    color: var(--text);
-    font-family: 'Merriweather', sans-serif;
+.productGrid p {
+    margin-top: 3rem;
+    background-color: var(--productsBtn);
+    border-radius: 2.5rem;
     cursor: pointer;
     font-size: 2.5rem;
-    border-radius: 2.5rem;
-    width: 23rem;
-    height: 6.6rem;
+    width: 32rem;
+    height: auto;
     border: none;
+    padding: 1.5rem;
 }
