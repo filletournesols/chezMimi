@@ -18,6 +18,42 @@
     border: none;
 }
 
+.breakfast_btn {
+    background-color: var(--hoverBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}
+
+.drinks_btn {
+    background-color: var(--hoverBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}
+
+.regular_btn {
+    background-color: var(--hoverBtns);
+    color: var(--text);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    width: 23rem;
+    height: 6.6rem;
+    border: none;
+}
+
 .productGrid {
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(2, 1fr);
@@ -27,6 +63,8 @@
 }
 
 .productGrid p {
+    /* display: flex;
+    align-items: center; */
     margin-top: 3rem;
     background-color: var(--productsBtn);
     border-radius: 2.5rem;

@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import { getAuthToken } from '../../util/auth'
 import Btn from '../ReusableComponents/Btn'
-import './OrderOptions.css'
+import './ProductOptions.css'
 
 const OrderOptions = () => {
     const breakfastBtn = 'breakfast_btn'
@@ -18,29 +18,39 @@ const OrderOptions = () => {
     let regularFiltered
 
     const [breakfast, setBreakfast] = useState([])
-    const [showBreakfast, setShowBreakfast] = useState(false)
     const [drinks, setDrinks] = useState([])
-    const [showDrinks, setShowDrinks] = useState(false)
     const [regular, setRegular] = useState([])
+    const [showBreakfast, setShowBreakfast] = useState(false)
+    const [showDrinks, setShowDrinks] = useState(false)
     const [showRegular, setShowRegular] = useState(false)
+    const [colorBtnBreakfast, setColorBtnBreakfast] = useState(false)
+    const [colorBtnDrinks, setColorBtnDrinks] = useState(false)
+    const [colorBtnRegular, setColorBtnRegular] = useState(false)
 
     useEffect(() => {
         axios({
             method: "get",
-            url: "http://localhost:8080/products",
+            url: "https://leburgerqueenrestaurant.onrender.com/products",
             auth: token,
         }).then((response) =>{
             console.log(response.data)
-            // todos = response.data
-            // setTodos(response.data)
-            // response.data.map((el) => {
-            //     todos.push(el)
-            // })
-            breakfastFiltered = response.data.filter(product => product.type == 'Desayuno')
+            breakfastFiltered = response.data.filter(product => product.type == 'Desayuno').sort((a, b) => {
+                if (a.name < b.name) {
+                    return -1
+                }
+            })
             setBreakfast(breakfastFiltered)
-            drinksFiltered = response.data.filter(product => product.type == 'Bebestibles')
+            drinksFiltered = response.data.filter(product => product.type == 'Bebestibles').sort((a, b) => {
+                if (a.name < b.name) {
+                    return -1
+                }
+            })
             setDrinks(drinksFiltered)
-            regularFiltered = response.data.filter(product => product.type == 'Regular')
+            regularFiltered = response.data.filter(product => product.type == 'Regular').sort((a, b) => {
+                if (a.name < b.name) {
+                    return -1
+                }
+            })
             setRegular(regularFiltered)
         }).catch((error)=>{
             console.log(error)
@@ -51,31 +61,36 @@ const OrderOptions = () => {
     }, [])
 
     const breakfastBtnHandler = () => {
-        setShowDrinks(false)
-        setShowRegular(false)
         setShowBreakfast(true)
+        setColorBtnBreakfast(true)
+        setShowDrinks(false)
+        setColorBtnDrinks(false)
+        setShowRegular(false)
+        setColorBtnRegular(false)
     }
     const drinksBtnHandler = () => {
-        setShowRegular(false)
         setShowBreakfast(false)
+        setColorBtnBreakfast(false)
         setShowDrinks(true)
+        setColorBtnDrinks(true)
+        setShowRegular(false)
+        setColorBtnRegular(false)
     }
     const regularBtnHandler = () => {
-        setShowDrinks(false)
         setShowBreakfast(false)
+        setColorBtnBreakfast(false)
+        setShowDrinks(false)
+        setColorBtnDrinks(false)
         setShowRegular(true)
+        setColorBtnRegular(true)
     }
 
-    /* colocar un componente luego de los 3 botones 
-    el cual debe mostrar bebestibles, desayuno o regular dependiendo del botón que se seleccione.
-    Debe poder ir intercambiando lo que muestra; ocultarse o mostrar la información 
-    onClick={}*/
     return (
         <div>
             <div className='order_options'>
-                <Btn btnType={btnType} cssBtn={drinksBtn} text={'Bebestibles'} onClick={drinksBtnHandler}></Btn>
-                <Btn btnType={btnType} cssBtn={breakfastBtn} text={'Desayuno'} onClick={breakfastBtnHandler}></Btn>
-                <Btn btnType={btnType} cssBtn={regularBtn} text={'Regular'} onClick={regularBtnHandler}></Btn>    
+                <Btn btnType={btnType} cssBtn={colorBtnDrinks ? drinksBtn : ''} text={'Bebestibles'} onClick={drinksBtnHandler}></Btn>
+                <Btn btnType={btnType} cssBtn={colorBtnBreakfast ? breakfastBtn : ''} text={'Desayuno'} onClick={breakfastBtnHandler}></Btn>
+                <Btn btnType={btnType} cssBtn={colorBtnRegular ? regularBtn : ''} text={'Regular'} onClick={regularBtnHandler}></Btn>    
             </div>
             <div className='productGrid'>
                 {showBreakfast == true && breakfast.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}

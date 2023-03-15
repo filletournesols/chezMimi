@@ -47,7 +47,7 @@ const LogInForm = () => {
             username: enteredUserName,
             password: enteredPsw
         };
-        return axios.post("http://localhost:8080/auth", userData)
+        return axios.post("https://leburgerqueenrestaurant.onrender.com/auth", userData)
         .then((response) => {
             console.log(response)
             console.log(response.status)

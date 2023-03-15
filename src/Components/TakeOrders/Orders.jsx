@@ -1,8 +1,9 @@
-const ProductOrders = () => {
+const Orders = () => {
     return (
-        <div className='product_orders'>
+        <div>
+            <p>órdenes</p>
         </div>
     );
 }
 
-export default ProductOrders;
+export default Orders;

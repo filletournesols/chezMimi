@@ -1,7 +1,8 @@
 import Logo from '../ReusableComponents/Logo'
 import LogOut from './LogOut'
 import OrdersBtnList from './OrdersBtnList'
-import OrderOptions from './OrderOptions'
+import ProductOptions from './ProductOptions'
+import Orders from './Orders'
 import './TakeOrders.css'
 
 const TakeOrders = () => {
@@ -12,7 +13,8 @@ const TakeOrders = () => {
             <Logo cssLogo={logo}></Logo>
             <LogOut></LogOut>
             <OrdersBtnList></OrdersBtnList>
-            <OrderOptions></OrderOptions>
+            <ProductOptions></ProductOptions>
+            <Orders></Orders>
         </div>
     );
 }
