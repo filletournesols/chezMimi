@@ -6,14 +6,16 @@ import Orders from './Orders'
 import './TakeOrders.css'
 
 const TakeOrders = () => {
-    const logo = 'take_orders_logo'
+    // const logo = 'take_orders_logo'
 
     return (
         <div className='take_orders'>
-            <Logo cssLogo={logo}></Logo>
-            <LogOut></LogOut>
-            <OrdersBtnList></OrdersBtnList>
-            <ProductOptions></ProductOptions>
+            <div className='header__take_orders'>
+                {/* <Logo cssLogo={logo}></Logo> */}
+                <LogOut></LogOut>
+                <OrdersBtnList></OrdersBtnList>
+            </div>
+                <ProductOptions></ProductOptions>
             <Orders></Orders>
         </div>
     );

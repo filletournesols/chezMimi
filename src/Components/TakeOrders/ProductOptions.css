@@ -1,6 +1,11 @@
+.products {
+    margin-bottom: 27rem;
+    margin-top: 16rem;
+}
+
 .order_options {
     display: grid;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
@@ -60,6 +65,7 @@
     justify-items: center;
     color: var(--text);
     font-family: 'Merriweather', sans-serif;
+    /* padding-top: 6.5rem; */
 }
 
 .productGrid p {

@@ -1,5 +1,6 @@
 .orders_btn_list {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     right: 6rem;
     top: 7rem;
 }

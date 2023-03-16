@@ -1,9 +1,4 @@
-.take_orders {
-    display: grid;
-}
-
-.take_orders_logo img {
-    margin: 5rem 0 0 5rem;
-    width: 15rem;
-    height: 10rem;
-}
+/* .header__take_orders {
+    background-color: var(--background);
+    z-index: 1000;
+} */

@@ -17,7 +17,7 @@ body {
 
 :root {
   --background: #EAE8E0;
-  --orderBackgroun: rgb(217, 209, 201);
+  --orderBackground: rgb(217, 209, 201);
   --waiter: rgb(91, 116, 108);
   --chef: rgb(113, 68, 42);
   --admin: rgb(181, 172, 167);

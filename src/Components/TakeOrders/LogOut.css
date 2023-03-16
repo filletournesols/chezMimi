@@ -1,3 +1,12 @@
+.take_orders_logo img {
+    /* margin: 5rem 0 0 5rem; */
+    width: 15rem;
+    height: 10rem;
+    position: fixed;
+    top: 4rem;
+    left: 4rem;
+}
+
 .form {
     display: flex;
     flex-direction: row;
@@ -37,7 +46,8 @@
 }
 
 .take_orders_btns {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     right: 2rem;
     top: 2rem;
 }

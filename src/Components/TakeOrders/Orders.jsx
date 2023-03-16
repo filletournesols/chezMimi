@@ -1,6 +1,8 @@
+import './Orders.css'
+
 const Orders = () => {
     return (
-        <div>
+        <div className='orders'>
             <p>órdenes</p>
         </div>
     );

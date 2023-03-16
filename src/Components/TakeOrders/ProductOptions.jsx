@@ -5,7 +5,7 @@ import { getAuthToken } from '../../util/auth'
 import Btn from '../ReusableComponents/Btn'
 import './ProductOptions.css'
 
-const OrderOptions = () => {
+const ProductOptions = () => {
     const breakfastBtn = 'breakfast_btn'
     const drinksBtn = 'drinks_btn'
     const regularBtn = 'regular_btn'
@@ -17,12 +17,16 @@ const OrderOptions = () => {
     let drinksFiltered
     let regularFiltered
 
+    const [allProducts, setAllProducts] = useState([])
     const [breakfast, setBreakfast] = useState([])
     const [drinks, setDrinks] = useState([])
     const [regular, setRegular] = useState([])
+    
+    const [showAllProducts, setShowAllProducts] = useState(true)
     const [showBreakfast, setShowBreakfast] = useState(false)
     const [showDrinks, setShowDrinks] = useState(false)
     const [showRegular, setShowRegular] = useState(false)
+
     const [colorBtnBreakfast, setColorBtnBreakfast] = useState(false)
     const [colorBtnDrinks, setColorBtnDrinks] = useState(false)
     const [colorBtnRegular, setColorBtnRegular] = useState(false)
@@ -33,7 +37,12 @@ const OrderOptions = () => {
             url: "https://leburgerqueenrestaurant.onrender.com/products",
             auth: token,
         }).then((response) =>{
-            console.log(response.data)
+            const allProductSorted = response.data.sort((a, b) => {
+                if (a.name < b.name) {
+                    return -1
+                }
+            })
+            setAllProducts(allProductSorted) 
             breakfastFiltered = response.data.filter(product => product.type == 'Desayuno').sort((a, b) => {
                 if (a.name < b.name) {
                     return -1
@@ -61,6 +70,7 @@ const OrderOptions = () => {
     }, [])
 
     const breakfastBtnHandler = () => {
+        setShowAllProducts(false)
         setShowBreakfast(true)
         setColorBtnBreakfast(true)
         setShowDrinks(false)
@@ -69,6 +79,7 @@ const OrderOptions = () => {
         setColorBtnRegular(false)
     }
     const drinksBtnHandler = () => {
+        setShowAllProducts(false)
         setShowBreakfast(false)
         setColorBtnBreakfast(false)
         setShowDrinks(true)
@@ -77,6 +88,7 @@ const OrderOptions = () => {
         setColorBtnRegular(false)
     }
     const regularBtnHandler = () => {
+        setShowAllProducts(false)
         setShowBreakfast(false)
         setColorBtnBreakfast(false)
         setShowDrinks(false)
@@ -86,19 +98,20 @@ const OrderOptions = () => {
     }
 
     return (
-        <div>
+        <div className='products'>
             <div className='order_options'>
                 <Btn btnType={btnType} cssBtn={colorBtnDrinks ? drinksBtn : ''} text={'Bebestibles'} onClick={drinksBtnHandler}></Btn>
                 <Btn btnType={btnType} cssBtn={colorBtnBreakfast ? breakfastBtn : ''} text={'Desayuno'} onClick={breakfastBtnHandler}></Btn>
                 <Btn btnType={btnType} cssBtn={colorBtnRegular ? regularBtn : ''} text={'Regular'} onClick={regularBtnHandler}></Btn>    
             </div>
             <div className='productGrid'>
-                {showBreakfast == true && breakfast.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
-                {showDrinks == true && drinks.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
-                {showRegular == true && regular.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showAllProducts && allProducts.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showBreakfast && breakfast.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showDrinks && drinks.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
+                {showRegular && regular.map((el) => <p key={el.product_id}>{el.name + " $" + el.price}</p>)}
             </div>
         </div>
     );
 }
 
-export default OrderOptions;
+export default ProductOptions;
