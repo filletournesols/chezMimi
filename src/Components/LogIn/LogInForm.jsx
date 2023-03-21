@@ -49,9 +49,6 @@ const LogInForm = () => {
         };
         return axios.post("https://leburgerqueenrestaurant.onrender.com/auth", userData)
         .then((response) => {
-            console.log(response)
-            console.log(response.status)
-            console.log(response.data)
             localStorage.setItem('token', response.data)
             const decodedToken = jwt_decode(response.data)
             const userName = decodedToken.username
@@ -62,7 +59,6 @@ const LogInForm = () => {
                 // two-way biding
                 setEnteredUserName('')
                 setEnteredPsw('')
-                console.log('mimi')
                 if (role == 'waiter') {
                     navigate("/takeorders")
                 } if (role == 'chef') {
