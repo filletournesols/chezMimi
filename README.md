@@ -6,6 +6,7 @@
 * [2. Prototipo](#2-prototipo)
 * [3. Referencia de colores](#3-referencias-de-colores)
 * [4. Historias de usuarios](#4-historias-de-usuarios)
+* [5. Autora](#5-autora)
 
 ***
 
@@ -192,6 +193,6 @@ para mantener actualizado el menú.
 
 ***
 
-## Autora
+## 5. Autora
 
 - [@filletournesols](https://github.com/filletournesols)
