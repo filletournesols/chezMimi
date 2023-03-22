@@ -1,4 +1,4 @@
-# Chez Mimi Coffee Shop
+# Chez Mimi
 
 ## Índice
 
@@ -11,7 +11,7 @@
 
 ## 1. Descripción
 
-Chez Mimi Coffee Shop es una plataforma para restaurantes que otorga una plataforma para tomar pedidos y recibirlos en la cocina y un back office para el administrador desarrollada con React.js.
+Chez Mimi es una plataforma para restaurantes que otorga una plataforma para tomar pedidos y recibirlos en la cocina y un back office para el administrador desarrollada con React.js.
 Este proyecto utiliza la [Burger Queen API](https://github.com/filletournesols/Burger-queen-api) desarrollada con PostgreSQL y Express.js.
 
 ## 2. Prototipo
