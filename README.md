@@ -191,3 +191,7 @@ para mantener actualizado el menú.
 * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
 ***
+
+## Autora
+
+- [@filletournesols](https://github.com/filletournesols)
