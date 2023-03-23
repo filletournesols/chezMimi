@@ -1,6 +1,6 @@
 .products {
     margin-bottom: 27rem;
-    margin-top: 16rem;
+    /* margin-top: 16rem; */
 }
 
 .order_options {
@@ -65,6 +65,7 @@
     justify-items: center;
     color: var(--text);
     font-family: 'Merriweather', sans-serif;
+    gap: 1rem;
     /* padding-top: 6.5rem; */
 }
 
@@ -81,3 +82,192 @@
     border: none;
     padding: 1.5rem;
 }
+
+/* @media screen and (min-width: 200px){
+    .products {
+        margin-bottom: 27rem;
+    }
+    .order_options {
+        display: grid;
+        margin-top: 3.5rem;
+        grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+    .order_options button {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .breakfast_btn {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .drinks_btn {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .regular_btn {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .productGrid {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        justify-items: center;
+    }
+    .productGrid {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+    .productGrid p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        width: 20rem;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 280px){
+    .order_options button {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .breakfast_btn {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .drinks_btn {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .regular_btn {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .order_options button {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+    .breakfast_btn {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+    .drinks_btn {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+    .regular_btn {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .order_options button {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+    .breakfast_btn {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+    .drinks_btn {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+    .regular_btn {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .order_options button {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+    .breakfast_btn {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+    .drinks_btn {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+    .regular_btn {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+}
+
+@media screen and (min-width: 1392px){
+    .order_options button {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+    .breakfast_btn {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+    .drinks_btn {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+    .regular_btn {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+} */

@@ -1,10 +1,10 @@
 .take_orders_logo img {
-    /* margin: 5rem 0 0 5rem; */
+    margin: 5rem 0 0 5rem;
     width: 15rem;
     height: 10rem;
-    position: fixed;
+    /* position: fixed;
     top: 4rem;
-    left: 4rem;
+    left: 4rem; */
 }
 
 .form {
@@ -46,9 +46,9 @@
 }
 
 .take_orders_btns {
-    /* position: absolute; */
-    position: fixed;
-    right: 2rem;
+    position: absolute;
+    /* position: fixed; */
+    right: 1rem;
     top: 2rem;
 }
 
@@ -63,3 +63,135 @@
     height: 3.5rem;
     border: none;
 }
+/* 
+@media screen and (min-width: 200px){
+    .take_orders_btns {
+        position: absolute;
+        left: 28rem;
+        top: 2rem;
+    }
+    .take_orders_logo img {
+        margin: 2rem 0 0 2rem;
+        width: 12rem;
+        height: 8rem;
+    }
+    .log_in_btn {
+        margin-top: 5rem;
+    }
+    .log_out_btn button {
+        font-size: 1.2rem;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+    }
+    .waiter {
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 8px;
+    }
+    .chef {
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 8px;
+    }
+    
+    .admin {
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 8px;
+    }
+    
+    .superadmin {
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 280px){
+    .log_in_btn {
+        margin-top: 7rem;
+    }
+    .log_out_btn button {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .log_out_btn button {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .take_orders_btns {
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+    }
+    .take_orders_logo img {
+        margin: 5rem 0 0 5rem;
+        width: 15rem;
+        height: 10rem;
+    }
+    .log_in_btn {
+        margin-top: 5rem;
+    }
+    .log_out_btn button {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+    .waiter {
+        font-size: 2rem;
+        align-items: center;
+        padding: 4px;
+    }
+    .chef {
+        font-size: 2rem;
+        align-items: center;
+        padding: 4px;
+    }
+    
+    .admin {
+        font-size: 2rem;
+        color: var(--text);
+        align-items: center;
+        padding: 4px;
+        border: 1px solid var(--admin);
+    }
+    
+    .superadmin {
+        font-size: 2rem;
+        align-items: center;
+        padding: 4px;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .log_out_btn button {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+}
+
+@media screen and (min-width: 1392px){
+    .log_in_btn {
+        margin-top: 10rem;
+    }
+    .log_out_btn button {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+} */

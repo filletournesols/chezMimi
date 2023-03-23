@@ -1,7 +1,7 @@
 .orders_btn_list {
-    /* position: absolute; */
-    position: fixed;
-    right: 6rem;
+    position: absolute;
+    /* position: fixed; */
+    right: 2rem;
     top: 7rem;
 }
 
@@ -29,3 +29,100 @@
     height: 3.5rem;
     border: none;
 }
+
+/* @media screen and (min-width: 200px){
+    .orders_btn_list {
+        left: 33rem;
+        top: 6rem;
+    }
+    .log_in_btn {
+        margin-top: 5rem;
+    }
+    .orders_btn button {
+        font-size: 1.2rem;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+    }
+    .new_order_btn button {
+        font-size: 1.2rem;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 280px){
+    .orders_btn button {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+    .new_order_btn button {
+        font-size: 1.5rem;
+        width: 13rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .orders_btn button {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+    .new_order_btn button {
+        font-size: 2rem;
+        width: 17rem;
+        height: 5rem;
+        border-radius: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .orders_btn button {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+    .new_order_btn button {
+        font-size: 2.5rem;
+        width: 23rem;
+        height: 6.6rem;
+        border-radius: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .orders_btn button {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+    .new_order_btn button {
+        font-size: 3rem;
+        width: 26rem;
+        height: 7rem;
+        border-radius: 2.7rem;
+    }
+}
+
+@media screen and (min-width: 1392px){
+    .orders_btn button {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+    .new_order_btn button {
+        font-size: 3.5rem;
+        width: 30rem;
+        height: 7.5rem;
+        border-radius: 2.9rem;
+    }
+} */
