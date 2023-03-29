@@ -14,6 +14,7 @@
 
 Chez Mimi es una plataforma para restaurantes que otorga una plataforma para tomar pedidos y recibirlos en la cocina y un back office para el administrador desarrollada con React.js.
 Este proyecto utiliza la [Burger Queen API](https://github.com/filletournesols/Burger-queen-api) desarrollada con PostgreSQL y Express.js.
+Si quieres visitar la página, click [aquí](https://comfy-florentine-d4e9dd.netlify.app/).
 
 ## 2. Prototipo
 
